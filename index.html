@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="this code is my training to write code for the Twitter website (X) using only HTML & CSS
+    "
+    />
+    <!-- ? FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ? FAVICONS -->
+    <link rel="icon" href="img/favicons/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <!-- ? Icons script -->
+    <script
+      src="https://kit.fontawesome.com/f9127cea73.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- ? CSS link files -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Twitter &mdash; Afsa</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="main-nav">
+        <div class="nav-container">
+          <div class="nav-item">
+            <ion-icon name="logo-twitter" class="logo"></ion-icon>
+          </div>
+
+          <a href="#" class="opened-item">
+            <div class="nav-item"><i class="fa-solid fa-house"></i>Home</div>
+          </a>
+          <a href="#">
+            <div class="nav-item">
+              <i class="fa-regular fa-hashtag" class="nav-icon"></i>Explore
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="nav-item">
+              <i class="fa-regular fa-bell"></i> Notifications
+            </div></a
+          >
+
+          <a href="#">
+            <div class="nav-item">
+              <i class="fa-regular fa-envelope"></i> Messages
+            </div></a
+          >
+
+          <a href="#">
+            <div class="nav-item">
+              <i class="fa-regular fa-bookmark"></i> Bookmarks
+            </div></a
+          >
+
+          <a href="#">
+            <div class="nav-item">
+              <i class="fa-solid fa-list"></i> Lists
+            </div></a
+          >
+
+          <a href="#">
+            <div class="nav-item">
+              <i class="fa-regular fa-user"></i> Profile
+            </div></a
+          >
+
+          <a href="#">
+            <div class="nav-item"><i class="fa-solid fa-gear"></i> More</div>
+          </a>
+          <div class="nav-btn-box">
+            <button class="nav-btn">Tweet</button>
+          </div>
+          <a href="#">
+            <div class="user-info">
+              <img src="img/users/1.jpg" alt="" / class="user-img">
+              <div class="user-info-name">
+                <p class="user-name">Ahmed Afsa</p>
+                <p class="user-id">@ahmedafsa</p>
+              </div>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </a>
+        </div>
+      </nav>
+      <main>
+        <header>
+          <div class="heading">
+            <h2>Home</h2>
+            <ion-icon name="sparkles-outline" class="heading-icon"></ion-icon>
+          </div>
+        </header>
+        <div class="main-container">
+          <div class="new-post">
+            <img src="img/users/1.jpg" alt="" />
+            <input
+              type="text"
+              name="post"
+              placeholder="What's happening?"
+              class="input-text"
+            />
+            <div class="upload">
+              <div class="file-upload">
+                <button class="upload-btn">
+                  <ion-icon name="image-outline"></ion-icon>
+                </button>
+                <button class="upload-btn">
+                  <ion-icon name="film-outline"></ion-icon>
+                </button>
+                <button class="upload-btn">
+                  <ion-icon name="bar-chart-outline"></ion-icon>
+                </button>
+                <button class="upload-btn">
+                  <ion-icon name="happy-outline"></ion-icon>
+                </button>
+                <button class="upload-btn">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                </button>
+              </div>
+              <button class="post-btn">Tweet</button>
+            </div>
+          </div>
+          <div class="feed">
+            <div class="post">
+              <div class="post-img-box">
+                <a href="#">
+                  <img src="img/users/3.jpg" alt="" / class="post-user-img">
+                </a>
+              </div>
+              <div class="post-text-box">
+                <div class="post-info">
+                  <a href="#">
+                    <div class="post-info-user">
+                      <p class="post-user-name">Ali Mo</p>
+                      <p class="post-user-id">@quds.</p>
+                      <p class="post-time-ago">1h</p>
+                    </div>
+                  </a>
+                  <button class="post-icon">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </button>
+                </div>
+                <div class="post-content">
+                  <p class="post-text arabic" dir="rtl">
+                    فلسطين أرض العزة ونبض الأمة وإن خذلها المتخاذلون ونسأل الله
+                    بإن يغفر لنا تقصيرنا <br />
+                    اللهم نصرك ✌️🤲
+                  </p>
+                  <div class="post-img">
+                    <img src="img/posts/1.webp" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="post-reactions">
+                <button class="reaction-item comment">
+                  <i class="fa-regular fa-comment react"></i>
+                  <span>1k</span>
+                </button>
+                <button class="reaction-item retweet">
+                  <i class="fa-solid fa-retweet react"></i>
+                  <span>2k</span>
+                </button>
+                <button class="reaction-item heart">
+                  <i class="fa-regular fa-heart react"></i>
+                  <span>150k</span>
+                </button>
+                <button class="reaction-item share">
+                  <i class="fa-solid react fa-share"></i>
+                  <span>950</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="post-img-box">
+                <a href="#">
+                  <img src="img/users/4.jpg" alt="" / class="post-user-img">
+                </a>
+              </div>
+              <div class="post-text-box">
+                <div class="post-info">
+                  <a href="#">
+                    <div class="post-info-user">
+                      <p class="post-user-name">Waled Taha</p>
+                      <p class="post-user-id">@waled</p>
+                      <p class="post-time-ago">1d</p>
+                    </div>
+                  </a>
+                  <button class="post-icon">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </button>
+                </div>
+                <div class="post-content">
+                  <p class="post-text" dir="rtl">
+                    بلادُ العُربِ أوطـــــــــــــــاني مــــنَ
+                    الشّـــــــــــــامِ لبغدان <br />
+                    ومن نجدٍ إلى يَمَــــــــــــــــنٍ إلى مِصــــــــــــــرَ
+                    فتطوانِ <br />
+                    فلا حدٌّ يباعدُنا ولا ديــــــــنٌ يفرّقنا لسان
+                    الضَّـــــادِ يجمعُنا بغسَّانٍ وعدنانِ <br />
+                    لنا مدنيّةُ سَـلفَـتْ سنُحييها وإنْ دُثرَتْ ولو في وجهنا
+                    وقفتْ دهاةُ الإنسِ والجانِ <br />
+                    فهبوا يا بني قومي إلى العـلياءِ بالعلمِ وغنوا يا بني أمّي
+                    بلادُ العُربِ أوطاني
+                  </p>
+                </div>
+              </div>
+              <div class="post-reactions">
+                <button class="reaction-item comment">
+                  <i class="fa-regular fa-comment react"></i>
+                  <span>400</span>
+                </button>
+                <button class="reaction-item retweet">
+                  <i class="fa-solid fa-retweet react"></i>
+                  <span>250</span>
+                </button>
+                <button class="reaction-item heart">
+                  <i class="fa-regular fa-heart react"></i>
+                  <span>900</span>
+                </button>
+                <button class="reaction-item share">
+                  <i class="fa-solid react fa-share"></i>
+                  <span>150</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="post-img-box">
+                <a href="#">
+                  <img src="img/users/2.jpg" alt="" class="post-user-img" />
+                </a>
+              </div>
+              <div class="post-text-box">
+                <div class="post-info">
+                  <a href="#">
+                    <div class="post-info-user">
+                      <p class="post-user-name">خالد محمد</p>
+                      <p class="post-user-id">@khaledafsa</p>
+                      <p class="post-time-ago">4d</p>
+                    </div>
+                  </a>
+                  <button class="post-icon">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </button>
+                </div>
+                <div class="post-content">
+                  <p class="post-text arabic" dir="rtl">
+                    لا تنسى أنك مقاطع <br />
+                    لا تساهم في قتل إخوانك بيدك ✌️
+                  </p>
+                  <div class="post-img">
+                    <img src="img/posts/2.webp" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="post-reactions">
+                <button class="reaction-item comment">
+                  <i class="fa-regular fa-comment react"></i>
+                  <span>5K</span>
+                </button>
+                <button class="reaction-item retweet">
+                  <i class="fa-solid fa-retweet react"></i>
+                  <span>2.1K</span>
+                </button>
+                <button class="reaction-item heart">
+                  <i class="fa-regular fa-heart react"></i>
+                  <span>900K</span>
+                </button>
+                <button class="reaction-item share">
+                  <i class="fa-solid react fa-share"></i>
+                  <span>1.5K</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <aside>
+        <div class="search-box"></div>
+        <input
+          type="search"
+          name="search"
+          class="search"
+          placeholder="Search Twitter"
+        />
+        <div class="trends-box">
+          <div class="trends-heading">
+            <h3>Trends for you</h3>
+            <button class="trends-settings">
+              <ion-icon
+                name="settings-outline"
+                class="settings-icon"
+              ></ion-icon>
+            </button>
+          </div>
+          <div class="trends">
+            <a href="#" class="trend-anchor">
+              <div class="trend">
+                <div class="trend-where">
+                  <p>Trending in Egypt</p>
+                  <button class="trend-more-btn">
+                    <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                  </button>
+                </div>
+                <p class="trend-title">غزة أرض العزة</p>
+                <p class="trend-num"><span>90K</span> posts</p>
+              </div>
+            </a>
+            <a href="#" class="trend-anchor">
+              <div class="trend">
+                <div class="trend-where">
+                  <p>Trending in Egypt</p>
+                  <button class="trend-more-btn">
+                    <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                  </button>
+                </div>
+                <p class="trend-title">أبو عبيدة للتربية والتعليم</p>
+                <p class="trend-num"><span>703K</span> posts</p>
+              </div>
+            </a>
+            <a href="#" class="trend-anchor">
+              <div class="trend">
+                <div class="trend-where">
+                  <p>Trending in Egypt</p>
+                  <button class="trend-more-btn">
+                    <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                  </button>
+                </div>
+                <p class="trend-title">غزة مقبرة الغزاة</p>
+                <p class="trend-num"><span>54K</span> posts</p>
+              </div>
+            </a>
+            <a href="#" class="trend-anchor">
+              <div class="trend">
+                <div class="trend-where">
+                  <p>Trending in Egypt</p>
+                  <button class="trend-more-btn">
+                    <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                  </button>
+                </div>
+                <p class="trend-title">فلسطين الآن</p>
+                <p class="trend-num"><span>104K</span> posts</p>
+              </div>
+            </a>
+            <a href="#" class="trend-anchor">
+              <div class="trend">
+                <div class="trend-where">
+                  <p>Trending in Egypt</p>
+                  <button class="trend-more-btn">
+                    <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                  </button>
+                </div>
+                <p class="trend-title">فلسطين تنتصر</p>
+                <p class="trend-num"><span>32K</span> posts</p>
+              </div>
+            </a>
+          </div>
+          <div class="trends-fotter trend">
+            <a href="#" class="show-more">Show more &RightArrow;</a>
+          </div>
+        </div>
+
+        <div class="follow-box">
+          <div class="follow-heading">
+            <h3>Who to follow</h3>
+            <button class="follow-settings">
+              <ion-icon
+                name="settings-outline"
+                class="settings-icon"
+              ></ion-icon>
+            </button>
+          </div>
+
+          <a href="#">
+            <div class="follow-card">
+              <div class="follow-card-img">
+                <img src="/img/users/3.jpg" />
+              </div>
+              <div class="follow-card-user">
+                <p class="follow-user-name">Ali Mo</p>
+                <p class="follow-user-id">@quds.</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="follow-card">
+              <div class="follow-card-img">
+                <img src="/img/users/2.jpg" />
+              </div>
+              <div class="follow-card-user">
+                <p class="follow-user-name">خالد محمد</p>
+                <p class="follow-user-id">@khaledafsa</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="follow-card">
+              <div class="follow-card-img">
+                <img src="/img/users/5.jpg" />
+              </div>
+              <div class="follow-card-user">
+                <p class="follow-user-name">Sayed</p>
+                <p class="follow-user-id">@sayed_450</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+          </a>
+          <div class="trends-fotter trend">
+            <a href="#" class="show-more">Show more &RightArrow;</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
